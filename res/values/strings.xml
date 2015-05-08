@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">数字记忆训练</string>
+    <string name="action_settings">设置</string>
+
+    <string name="home_btn_test">开始测试</string>
+    <string name="home_btn_record">查看记录</string>
+    
+    <string name="training_tv_number">测试数量:</string>
+    <string name="training_tv_number_desc">请输入测试数量</string>
+    <string name="training_btn_start">开始</string>
+
+</resources>

@@ -1,0 +1,104 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_blue"
+    android:padding="8dp" >
+
+    <TextView
+        android:id="@+id/tv_number"
+        style="@style/TextBaseTheme"
+        android:layout_marginRight="8dp"
+        android:text="@string/training_tv_number"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="@color/black" />
+	
+    <EditText
+        android:id="@+id/et_number"
+        style="@style/TextGuide"
+        android:layout_width="64dp"
+        android:layout_toRightOf="@+id/tv_number"
+        android:inputType="number"
+        android:imeOptions="actionNone"
+        android:text="100" />
+
+    <TextView
+        android:id="@+id/tv_number_desc"
+        style="@style/TextBaseTheme"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/et_number"
+        android:text="@string/training_tv_number_desc"
+        android:textColor="@color/textColor_orange"
+        android:textSize="@dimen/text_size_micro"
+        android:visibility="gone" />
+
+   <!--  <LinearLayout
+        android:id="@+id/linear_guide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_number" >
+
+        <TextView
+            style="@style/TextGuide"
+            android:text="1" />
+
+        <TextView
+            style="@style/TextGuide"
+            android:text="2" />
+
+        <TextView
+            style="@style/TextGuide"
+            android:text="3" />
+
+        <TextView
+            style="@style/TextGuide"
+            android:text="4" />
+
+        <TextView
+            style="@style/TextGuide"
+            android:text="5" />
+
+        <TextView
+            style="@style/TextGuide"
+            android:text="6" />
+
+        <TextView
+            style="@style/TextGuide"
+            android:text="7" />
+
+        <TextView
+            style="@style/TextGuide"
+            android:text="8" />
+
+        <TextView
+            style="@style/TextGuide"
+            android:text="9" />
+
+        <TextView
+            style="@style/TextGuide"
+            android:text="10" />
+    </LinearLayout> -->
+
+    <GridView
+        android:id="@+id/gv_number"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/et_number"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="1dp"
+        android:layout_above="@+id/btn_start"
+        android:verticalSpacing="1dp"
+        android:numColumns="5" />
+    
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/TextBaseTheme"
+        android:text="@string/training_btn_start"
+        android:gravity="center"
+        android:layout_marginTop="4dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

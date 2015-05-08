@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Button
+        android:id="@+id/btn_record"
+        style="@style/TextBaseTheme"
+        android:layout_centerInParent="true"
+        android:text="@string/home_btn_record" />
+
+    <Button
+        android:id="@+id/btn_start"
+        style="@style/TextBaseTheme"
+        android:layout_above="@+id/btn_record"
+        android:layout_alignLeft="@+id/btn_record"
+        android:text="@string/home_btn_test" />
+
+</RelativeLayout>

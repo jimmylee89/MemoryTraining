@@ -1,0 +1,29 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light">
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <!-- TextView -->
+    <style name="TextBaseTheme">
+		<item name="android:layout_height">48dp</item>
+		<item name="android:layout_width">wrap_content</item>
+		<item name="android:gravity">center_vertical</item>
+		<item name="android:textSize">@dimen/text_size_medium</item>
+    </style>
+
+    <!-- training guide -->
+    <style name="TextGuide" parent="TextBaseTheme">
+		<item name="android:layout_weight">1</item>
+		<item name="android:layout_height">48dp</item>
+		<item name="android:layout_width">0dp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    
+    
+
+</resources>
